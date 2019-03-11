@@ -1,0 +1,7 @@
+siparisim/node_modules
+siparisim/node_modules/*
+backend/node_modules
+backend/node_modules/*
+siparisim/package-lock.json
+backend/package-lock.json
+.DS_Store
