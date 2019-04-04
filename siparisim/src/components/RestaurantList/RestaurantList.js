@@ -7,7 +7,9 @@ import {
 import {
   Container,
   Content,
-  Text
+  Text,
+  Header,
+  Item, Input, Icon, Button, Left
 } from 'native-base';
 
 export default class RestaurantList extends React.Component {
@@ -18,6 +20,21 @@ export default class RestaurantList extends React.Component {
     render() {
       return (
         <Container>
+        <Header searchBar rounded>
+        <Left>
+          <Button>
+            <Icon name="ios-people" />
+          </Button>
+        </Left>
+        <Item>
+          <Icon name="ios-search" />
+          <Input placeholder="Search" />
+          <Icon name="ios-people" />
+        </Item>
+        <Button transparent>
+          <Text>Search</Text>
+        </Button>
+      </Header>
           <Content>
             <Text>
               Merhaba Dünya
